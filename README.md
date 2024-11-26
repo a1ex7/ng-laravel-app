@@ -6,7 +6,7 @@
 
 ### Steps to Run the Service
 
-1. Build and start the Docker containers:
+1. Build the Docker containers:
 
    ```bash
    docker-compose build --no-cache
@@ -27,7 +27,9 @@
    make up
    ```
 
-3. The api will now be available at **http://localhost**.
+3. The app will now be available at **http://localhost**
+   
+![img_app.png](img_app.png)
 
    You can change app or services port as you need in `.env` file by changing
 
@@ -50,3 +52,4 @@ docker-compose exec app php artisan test
 # or
 make test
 ```
+![img_test.png](img_test.png)
