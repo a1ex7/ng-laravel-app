@@ -24,9 +24,6 @@ Route::middleware(SignedRouteMiddleware::class)->group(function () {
 Route::middleware('auth')->group(function () {
     Route::post('links', [LinkController::class, 'update'])->name('links.update');
     Route::delete('links', [LinkController::class, 'destroy'])->name('links.destroy');
-});
-
-Route::middleware('auth')->group(function () {
     Route::get('games', [GameController::class, 'index'])->name('games.index');
     Route::post('games', [GameController::class, 'create'])->name('games.create');
 });
